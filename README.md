@@ -1,4 +1,5 @@
-# instagram-clone-android
+
+# Instagram Clone - Android App
 
 A fully functional Instagram clone built with Kotlin and Android Jetpack components, featuring a modern UI with Instagram-like design.
 
@@ -24,7 +25,7 @@ A fully functional Instagram clone built with Kotlin and Android Jetpack compone
 ## 📱 Screens
 
 | Home Screen | Profile Screen | Reels Screen |
-|------------|---------------|--------------|
+|-------------|----------------|--------------|
 | Stories + Feed | Profile Info + Posts Grid | Video Reels + Interactions |
 
 ## 🚀 Installation
