@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#1A1A1A"
+    android:padding="4dp">
+
+    <!-- Reel Video/Image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/reel_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dareesha"
+            android:background="#333333"/>
+
+        <!-- Play button overlay -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_play"
+            android:tint="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_black_transparent"/>
+
+        <!-- Duration -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:15"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:background="#99000000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+
+    <!-- Reel Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Profile -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/reel_profile"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/mypicture"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#666666"/>
+
+        <!-- Username and views -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/reel_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aribashuaib"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/reel_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2M views"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <!-- More options -->
+        <ImageView
+            android:id="@+id/reel_more"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_more"
+            android:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <!-- Caption -->
+    <TextView
+        android:id="@+id/reel_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send it to him 😊"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <!-- Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingBottom="8dp">
+
+        <!-- Like -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/reel_like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:tint="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/reel_likes_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2K"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Comment -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/reel_comment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:tint="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/reel_comments_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="245"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Share -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/reel_share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_share"
+                android:tint="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/reel_shares_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- Save -->
+        <ImageView
+            android:id="@+id/reel_save"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_save"
+            android:tint="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
